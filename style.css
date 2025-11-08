@@ -150,10 +150,17 @@ body {
   transform: translateY(-3px);
 }
 
-.section p, .section li {
+.section p, .section li, .section a {
   line-height: 1.8;
   font-size: 15px;
   color: #333;
+}
+
+
+.section a:hover {
+  text-decoration: underline; /* saat di-hover muncul garis bawah */
+  color: #000000;
+  font-weight: 600;
 }
 
 /* Footer */
