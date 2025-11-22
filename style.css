@@ -765,6 +765,7 @@ body {
   visibility: hidden;
   transition: opacity 0.2s ease;
 }
+
 .judul-desa {
   text-align: center;
   font-size: 20px;
@@ -776,17 +777,29 @@ body {
 .desa-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
   text-align: center;
-  gap: 8px;
+  padding: 0 10px;
 }
 
 .desa-grid a {
   text-decoration: none;
   color: #1a3d7c;
+  background: #eef3ff;
+  padding: 8px 12px;
+  border-radius: 8px; /* Membuat sudut melengkung */
   font-size: 14px;
+  border: 1px solid #cfd9f4;
+  display: inline-block;
+  transition: 0.25s;
 }
 
 .desa-grid a:hover {
-  text-decoration: underline;
+  background: #d8e4ff;
+  transform: translateY(-2px);
 }
 
+.desa-grid a:active {
+  background: #b7caf3; /* Lebih gelap saat diklik */
+  transform: scale(0.96);
+}
